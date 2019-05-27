@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <h1>Formularios</h1>
+    <form action="" method="POST">
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <div class="">
+                <label for="nombre">Nombre completo</label>
+                <input type="text" name="nombre" id="nombre">
+            </div>
+            <div class="">
+                <label for="clave">Clave</label>
+                <input type="password" name="password" id="password">
+            </div>
+            <div class="">
+                <label for="foto">Foto:</label>
+                <input type="file" name="foto" id="foto">
+            </div>
+            <div class="">
+                <label for="genero">Genero:</label>
+                <select name="genero" id="genero">
+                    <option value="">Seleccione el genero</option>
+                    <option value="F">Femenino</option>
+                    <option value="M">Masculino</option>
+                </select>
+            </div>
+            <div class="">
+                <label for="descripcion">Descripcion:</label>
+                <br>
+                <textarea name="descripcion" id="descri" cols="30" rows="5"></textarea>
+            </div>
+
+        </fieldset>
+        <fieldset>
+            <legend>Datos Sena</legend>
+            <input type="hidden" name="centro" value="CPIC">
+            <div class="">
+                Seleccione uno o mas modulos
+                <br>
+                <label>
+                    <input type="checkbox" name="modulo">
+                    Analisis
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" name="modulo">
+                    Desarrollo
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" name="modulo">
+                    Comunicacion
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" name="modulo">
+                    Ambiental
+                </label>
+            </div>
+            <br>
+            <div class="">
+                Seleccione la titulacion
+                <br>
+                <label>
+                    <input type="radio" name="titulacion">
+                    ADSI
+                </label>
+                <br>
+                <label>
+                    <input type="radio" name="titulacion">
+                    ADSI2
+                </label>
+                <br>
+                <label>
+                    <input type="radio" name="titulacion">
+                    ADSI3
+                </label>
+            </div>
+        </fieldset>
+        <input type="submit" value="Enviar formulario">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+
+</html>
