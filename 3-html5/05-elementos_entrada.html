@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="" method="POST">
+        <div class="">
+            <label for="">Email</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+
+        <label for="">Color:</label>
+        <input type="color" name="color" oninput="pcolor.value=this.value">
+        <output id="pcolor"></output>
+
+
+        <div class="">
+            <label for="">Fecha:</label>
+            <input type="date" oninput="pdate.value = this.value">
+            <output id="pdate"></output>
+        </div>
+
+        <div class="">
+            <label for="">Numero 1:</label>
+            <input type="number" min="1" max="10" step="2" id="num1"
+                oninput="osuma.value=parseInt(this.value)+parseInt(num2.value)">
+            <label for="">Numero 2:</label>
+            <input type="number" min="1" max="10" step="2" id="num2"
+                oninput="osuma.value=parseInt(this.value)+parseInt(num1.value)">
+            <output id="osuma"></output>
+        </div>
+
+        <div class="">
+            <label for="">Range:</label>
+            <input type="range" min="1" max="100" oninput="orango.value=this.value">
+            <output id="orango"></output>
+        </div>
+
+        <div class="">
+            <label for="">Time:</label>
+            <input type="time">
+        </div>
+
+        <div class="">
+            <label for="">Autofocus</label>
+            <input type="text" name="name" id="name" autofocus>
+        </div>
+
+        <div class="">
+            <input list="lenguajes">
+            <datalist id="lenguajes">
+                <option value="python">Python</option>
+                <option value="cpp">C++</option>
+                <option value="java">Java</option>
+            </datalist>
+        </div>
+        <div class="">
+            <button type="submit">Enviar</button>
+        </div>
+    </form>
+</body>
+
+</html>
