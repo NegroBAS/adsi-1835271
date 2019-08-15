@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Posicionamiento absoluto</title>
+    <style>
+      section {
+        border: 1px solid #555;
+        width: 360px;
+        padding: 10px;
+        position: relative;
+        margin: 20px auto;
+      }
+      section div {
+        background: #fff;
+        border: 1px solid #555;
+        display: inline-block;
+        padding: 20px 10px;
+        width: 95px;
+      }
+      section div.box2 {
+        position: absolute;
+        top: 40px;
+        right: 50px;
+      }
+      section div.box4 {
+        width: 337px;
+        margin-top: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Posicionamiento absoluto</h1>
+    <section>
+      <div class="box1">Caja 1</div>
+      <div class="box2">Caja 2</div>
+      <div class="box3">Caja 3</div>
+      <div class="box4">Caja 4</div>
+    </section>
+  </body>
+</html>
