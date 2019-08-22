@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contenido sobrante (overflow)</title>
+    <style>
+        .overflow {
+            margin: 10px auto;
+            width: 500px;
+        }
+
+        section.overflow div {
+            border: 1px solid black;
+            display: inline-block;
+            height: 250px;
+            padding: 10px;
+            vertical-align: top;
+            width: 140px;
+        }
+
+        section.overflow div h3 {
+            background-color: silver;
+            padding: 10px;
+            margin: 0;
+            width: 100%;
+        }
+
+        section.overflow div.box1 {
+            overflow: visible;
+        }
+
+        section.overflow div.box2 {
+            overflow: hidden;
+        }
+
+        section.overflow div.box3 {
+            overflow: scroll;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Contenido sobrante (overflow)</h1>
+    <section class="overflow">
+        <div class="box1">
+            <h3>overflow:visible</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt veritatis reiciendis doloribus sapiente
+                voluptatem dolorem, saepe esse. Quod, cupiditate accusamus laudantium labore voluptatum temporibus sunt
+                quasi esse, minus reiciendis tempore culpa, dolores architecto vitae illo neque ducimus totam? Ipsam
+                corrupti aliquam tempora dolores, facere recusandae minima quisquam mollitia adipisci nulla.</p>
+        </div>
+        <div class="box2">
+            <h3>overflow:visible</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt veritatis reiciendis doloribus sapiente
+                voluptatem dolorem, saepe esse. Quod, cupiditate accusamus laudantium labore voluptatum temporibus sunt
+                quasi esse, minus reiciendis tempore culpa, dolores architecto vitae illo neque ducimus totam? Ipsam
+                corrupti aliquam tempora dolores, facere recusandae minima quisquam mollitia adipisci nulla.</p>
+        </div>
+        <div class="box3">
+            <h3>overflow:visible</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt veritatis reiciendis doloribus sapiente
+                voluptatem dolorem, saepe esse. Quod, cupiditate accusamus laudantium labore voluptatum temporibus sunt
+                quasi esse, minus reiciendis tempore culpa, dolores architecto vitae illo neque ducimus totam? Ipsam
+                corrupti aliquam tempora dolores, facere recusandae minima quisquam mollitia adipisci nulla.</p>
+        </div>
+    </section>
+</body>
+
+</html>
