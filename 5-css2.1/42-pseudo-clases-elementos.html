@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pseudo clases/elemento</title>
+    <style>
+        * {
+            font-family: Helvetica;
+        }
+
+        nav.links {
+            margin: 10px auto;
+            width: 600px;
+        }
+
+        nav.links a {
+            display: inline-block;
+            width: 125px;
+        }
+
+        nav.links a:link:first-child {
+            color: darkorange;
+        }
+
+        nav.links a:link,
+        nav.links a:visited {
+            background: teal;
+            border-bottom: 5px solid crimson;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        nav.links a:active {
+            background: crimson;
+            border-bottom: 5px solid teal;
+        }
+
+        nav.links a:hover {
+            background: dodgerblue;
+            border-bottom: 5px solid orange;
+        }
+
+        input {
+            outline: none;
+            border: 1px solid teal;
+            padding: 10px;
+            transition: all 1s ease-in;
+        }
+
+        input:focus {
+            border: 1px dashed crimson;
+            transition: all 1s ease-in;
+        }
+
+        p {
+            margin: 10px auto;
+            padding: 10px;
+            width: 600px;
+        }
+
+
+        p::first-line {
+            text-decoration: line-through;
+            background: rgba(0, 128, 128, 0.267);
+        }
+
+        p::first-letter {
+            font-size: 5em;
+            color: teal;
+        }
+
+        div.box {
+            background-color: dodgerblue;
+            height: 200px;
+            width: 200px;
+        }
+
+        div.box::before {
+            background-color: yellow;
+            content: "";
+            position: absolute;
+            left: -10px;
+            width: 50px;
+            height: 200px;
+        }
+
+        div.box::after {
+            background-color: red;
+            content: "👽";
+            position: absolute;
+            left: 40px;
+            width: 50px;
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Pseudo clases / elementos</h1>
+    <h4>Enlaces (Link, visited, active, hover)</h4>
+    <nav class="links">
+        <a href="javascript::">Home</a>
+        <a href="javascript::">About us</a>
+        <a href="javascript::">Services</a>
+        <a href="javascript::">Contact us</a>
+    </nav>
+    <h4>elemento de formulario</h4>
+    <input type="text" name="email" id="email" placeholder="Email">
+    <h4>Primera letra / primera linea</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam dolorum iste, laudantium cumque totam, fuga
+        nesciunt repellat, nihil incidunt quisquam quaerat culpa earum ipsa voluptatem blanditiis hic quae corrupti
+        consequuntur?</p>
+    <h4>Antes/despues</h4>
+    <div class="box">
+
+    </div>
+</body>
+
+</html>
