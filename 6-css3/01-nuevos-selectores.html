@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nuevos selectores</title>
+    <link rel="stylesheet" href="css/master.css">
+    <style>
+        /* li: first-of-type */
+        ul.planguages li:first-of-type {
+            background-color: rgb(11, 109, 221);
+            color: white;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        /* li:last-of-type */
+        ul.frontend li:last-of-type {
+            background-color: rgb(11, 109, 221);
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>Nuevos selectores</h1>
+        </header>
+        <section>
+            <h3>:First-of-type</h3>
+            <ul class="planguages">
+                <li>Python</li>
+                <li>Ruby</li>
+                <li>PHP</li>
+            </ul>
+            <h3>:Last-of-type</h3>
+            <ul class="frontend">
+                <li>React</li>
+                <li>Angular</li>
+                <li>Vue</li>
+            </ul>
+        </section>
+    </main>
+</body>
+
+</html>
