@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reto</title>
+    <link rel="stylesheet" href="css/master.css">
+    <style>
+        section{
+            margin: 20px auto;
+            border: 1px solid dodgerblue;
+            height: 500px;
+            width: 500px;
+        }
+        .mario{
+            margin-top: 100px;
+            width: 20px;
+            height: 20px;
+            box-shadow: 200px 0px 0px 0px red,
+                        220px 0px 0px 0px red,
+                        240px 0px 0px 0px red,
+                        260px 0px 0px 0px red,
+                        280px 0px 0px 0px red,
+                        340px 0px 0px 0px lightsalmon,
+                        340px -20px 0px 0px lightsalmon,
+                        360px -20px 0px 0px lightsalmon,
+                        380px -20px 0px 0px lightsalmon,
+                        360px 0px 0px 0px lightsalmon,
+                        380px 0px 0px 0px lightsalmon,
+
+                        180px 20px 0px 0px red,
+                        200px 20px 0px 0px red,
+                        220px 20px 0px 0px red,
+                        240px 20px 0px 0px red,
+                        260px 20px 0px 0px red,
+                        280px 20px 0px 0px red,
+                        300px 20px 0px 0px red,
+                        320px 20px 0px 0px red,
+                        340px 20px 0px 0px red,
+                        340px 20px 0px 0px red,
+                        360px 20px 0px 0px lightsalmon,
+                        380px 20px 0px 0px lightsalmon,
+
+
+
+                        180px 40px 0px 0px brown,
+                        200px 40px 0px 0px brown,
+                        220px 40px 0px 0px brown,
+                        240px 40px 0px 0px lightsalmon,
+                        260px 40px 0px 0px lightsalmon,
+                        280px 40px 0px 0px brown,
+                        300px 40px 0px 0px lightsalmon,
+                        300px 40px 0px 0px lightsalmon,
+                        340px 40px 0px 0px brown,
+                        360px 40px 0px 0px brown,
+                        380px 40px 0px 0px brown,
+
+                        160px 60px 0px 0px brown,
+                        180px 60px 0px 0px lightsalmon,
+                        200px 60px 0px 0px brown,
+                        220px 60px 0px 0px lightsalmon,
+                        240px 60px 0px 0px lightsalmon,
+                        260px 60px 0px 0px lightsalmon,
+                        280px 60px 0px 0px brown,
+                        300px 60px 0px 0px lightsalmon,
+                        320px 60px 0px 0px lightsalmon,
+                        340px 60px 0px 0px lightsalmon,
+                        360px 60px 0px 0px brown,
+                        380px 60px 0px 0px brown,
+
+                        160px 80px 0px 0px brown,
+                        180px 80px 0px 0px lightsalmon,
+                        200px 80px 0px 0px brown,
+                        220px 80px 0px 0px brown,
+                        240px 80px 0px 0px lightsalmon,
+                        260px 80px 0px 0px lightsalmon,
+                        280px 80px 0px 0px lightsalmon,
+                        300px 80px 0px 0px brown,
+                        320px 80px 0px 0px lightsalmon,
+                        340px 80px 0px 0px lightsalmon,
+                        360px 80px 0px 0px lightsalmon,
+                        380px 80px 0px 0px brown,
+
+                        160px 100px 0px 0px brown,
+                        180px 100px 0px 0px brown,
+                        200px 100px 0px 0px lightsalmon,
+                        220px 100px 0px 0px lightsalmon,
+                        240px 100px 0px 0px lightsalmon,
+                        260px 100px 0px 0px lightsalmon,
+                        280px 100px 0px 0px brown,
+                        300px 100px 0px 0px brown,
+                        320px 100px 0px 0px brown,
+                        340px 100px 0px 0px brown,
+                        360px 100px 0px 0px brown,
+
+                        200px 120px 0px 0px lightsalmon,
+                        220px 120px 0px 0px lightsalmon,
+                        240px 120px 0px 0px lightsalmon,
+                        260px 120px 0px 0px lightsalmon,
+                        240px 120px 0px 0px lightsalmon,
+                        260px 120px 0px 0px lightsalmon,
+                        280px 120px 0px 0px lightsalmon,
+                        300px 120px 0px 0px lightsalmon,
+                        320px 120px 0px 0px lightsalmon,
+                        340px 120px 0px 0px brown,
+
+                        120px 140px 0px 0px brown,
+                        140px 140px 0px 0px brown,
+                        160px 140px 0px 0px brown,
+                        180px 140px 0px 0px brown,
+                        200px 140px 0px 0px brown,
+                        220px 140px 0px 0px red,
+                        240px 140px 0px 0px brown,
+                        260px 140px 0px 0px brown,
+                        240px 140px 0px 0px brown,
+                        260px 140px 0px 0px brown,
+                        280px 140px 0px 0px brown,
+                        300px 140px 0px 0px red,
+                        320px 140px 0px 0px brown,
+
+                        100px 160px 0px 0px brown,
+                        120px 160px 0px 0px brown,
+                        140px 160px 0px 0px brown,
+                        160px 160px 0px 0px brown,
+                        180px 160px 0px 0px brown,
+                        200px 160px 0px 0px brown,
+                        220px 160px 0px 0px brown,
+                        240px 160px 0px 0px red,
+                        260px 160px 0px 0px brown,
+                        240px 160px 0px 0px brown,
+                        260px 160px 0px 0px brown,
+                        280px 160px 0px 0px brown,
+                        300px 160px 0px 0px brown,
+                        320px 160px 0px 0px red,
+
+                        80px 180px 0px 0px lightsalmon,
+                        100px 180px 0px 0px lightsalmon,
+                        120px 180px 0px 0px brown,
+                        140px 180px 0px 0px brown,
+                        160px 180px 0px 0px brown,
+                        180px 180px 0px 0px brown,
+                        200px 180px 0px 0px brown,
+                        220px 180px 0px 0px brown,
+                        240px 180px 0px 0px red,
+                        260px 180px 0px 0px red,
+                        240px 180px 0px 0px red,
+                        260px 180px 0px 0px red,
+                        280px 180px 0px 0px red,
+                        300px 180px 0px 0px red,
+                        320px 180px 0px 0px red,
+
+                        80px 200px 0px 0px lightsalmon,
+                        100px 200px 0px 0px lightsalmon,
+                        120px 200px 0px 0px lightsalmon,
+                        180px 200px 0px 0px red,
+                        200px 200px 0px 0px brown,
+                        220px 200px 0px 0px red,
+                        240px 200px 0px 0px red,
+                        260px 200px 0px 0px red,
+                        280px 200px 0px 0px yellow,
+                        300px 200px 0px 0px red,
+                        320px 200px 0px 0px yellow,
+                        340px 200px 0px 0px red,
+                        360px 200px 0px 0px brown,
+                        380px 200px 0px 0px brown,
+                        380px 180px 0px 0px brown,
+                        380px 160px 0px 0px brown,
+
+                        100px 220px 0px 0px lightsalmon,
+                        140px 220px 0px 0px brown,
+                        180px 220px 0px 0px red,
+                        200px 220px 0px 0px red,
+                        220px 220px 0px 0px red,
+                        240px 220px 0px 0px red,
+                        260px 220px 0px 0px red,
+                        280px 220px 0px 0px red,
+                        300px 220px 0px 0px red,
+                        320px 220px 0px 0px red,
+                        340px 220px 0px 0px red,
+                        360px 220px 0px 0px brown,
+                        380px 220px 0px 0px brown,
+                        380px 200px 0px 0px brown,
+                        380px 180px 0px 0px brown,
+
+                        120px 240px 0px 0px brown,
+                        140px 240px 0px 0px brown,
+                        160px 240px 0px 0px brown,
+                        180px 240px 0px 0px red,
+                        200px 240px 0px 0px red,
+                        220px 240px 0px 0px red,
+                        240px 240px 0px 0px red,
+                        260px 240px 0px 0px red,
+                        280px 240px 0px 0px red,
+                        300px 240px 0px 0px red,
+                        320px 240px 0px 0px red,
+                        340px 240px 0px 0px red,
+                        360px 240px 0px 0px brown,
+                        380px 240px 0px 0px brown,
+                        380px 220px 0px 0px brown,
+                        380px 200px 0px 0px brown,
+
+                        100px 260px 0px 0px brown,
+                        120px 260px 0px 0px brown,
+                        140px 260px 0px 0px brown,
+                        160px 260px 0px 0px red,
+                        180px 260px 0px 0px red,
+                        200px 260px 0px 0px red,
+                        220px 260px 0px 0px red,
+                        240px 260px 0px 0px red,
+                        260px 260px 0px 0px red,
+                        280px 260px 0px 0px red,
+
+                        100px 280px 0px 0px brown,
+                        
+                        160px 280px 0px 0px red,
+                        180px 280px 0px 0px red,
+                        200px 280px 0px 0px red,
+                        220px 280px 0px 0px red
+            ;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Reto</h1>
+        </header>
+        <section>
+            <div class="mario"></div>
+        </section>
+    </main>
+</body>
+</html>

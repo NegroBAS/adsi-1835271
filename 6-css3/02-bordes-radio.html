@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Border radio</title>
+    <link rel="stylesheet" href="css/master.css">
+    <style>
+        .box{
+            border: 2px solid dodgerblue;
+            height: 350px;
+            width: 350px;
+            margin: 5px auto;
+        }
+        .box1{
+            border-radius: 50%;
+        }
+        .box2{
+            border-radius: 40px 0px;
+        }
+        .box3{
+            border-radius: 50% 0px 0px 50%;
+        }
+        .box4{
+            border-radius: 50% 0px 50% 50%;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Bordes (radio)</h1>
+        </header>
+        <section>
+            <h3>border-radius: 50%</h3>
+            <div class="box box1"></div>
+            <h3>border-radius: 20px 0px</h3>
+            <div class="box box2"></div>
+            <h3>border-radius: 130px 0px 0px 130px</h3>
+            <div class="box box3"></div>
+            <h3>border-radius: 130px 0px 130px 130px</h3>
+            <div class="box box4"></div>
+        </section>
+    </main>
+</body>
+</html>

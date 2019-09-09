@@ -23,6 +23,50 @@
             background-color: rgb(11, 109, 221);
             color: white;
         }
+
+        /* li:nth-child(3) */
+        ul.databases li:nth-child(3) {
+            background-color: rgb(11, 109, 221);
+            color: white;
+        }
+
+        /* article#home:target */
+        nav a:link,
+        nav a:visited {
+            color:d dodgerblue;
+        }
+
+        article {
+            display: none;
+        }
+
+        article#home:target {
+            background-color: greenyellow;
+            display: block;
+        }
+
+        article#services:target {
+            background-color: greenyellow;
+            display: block;
+        }
+
+        article#contact:target {
+            background-color: greenyellow;
+            display: block;
+        }
+
+        /* ::selection */
+        p.yellow::selection{
+            background-color: yellow;
+        }
+        p.blue::selection{
+            background-color: blue;
+            color: white;
+        }
+        p.red::selection{
+            background-color: red;
+            color: white;
+        }
     </style>
 </head>
 
@@ -44,6 +88,48 @@
                 <li>Angular</li>
                 <li>Vue</li>
             </ul>
+            <h3>li:nth-child(n) (Selecciona el elemento numero n)</h3>
+            <ul class="databases">
+                <li>MySQL</li>
+                <li>Maria DB</li>
+                <li>Postgres</li>
+                <li>SQL Server</li>
+                <li>Oracle</li>
+            </ul>
+            <h3>section#home:target (Selecciona el ancla activa)</h3>
+            <nav>
+                <a href="#home">Home</a>|
+                <a href="#services">Services</a>|
+                <a href="#contact">Contact</a>
+            </nav>
+            <article id="home">
+                <h4>Home</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, ea. Quia nostrum laudantium
+                    neque placeat harum nihil blanditiis vel nobis, ad autem voluptas reprehenderit accusamus dicta
+                    repellendus aperiam inventore quo.</p>
+            </article>
+            <article id="services">
+                <h4>Sercices</h4>
+                <p>Necessitatibus temporibus, laborum aspernatur adipisci perferendis ratione voluptas fugit pariatur
+                    explicabo accusantium, error odit officia sequi consequatur. Ex iste nulla praesentium, nobis iure
+                    doloremque accusantium voluptatem quaerat, corrupti, qui quam!</p>
+            </article>
+            <article id="contact">
+                <h4>Contact</h4>
+                <p>Corporis dolore ducimus eos obcaecati magni iure labore fugiat nihil inventore dolorum veniam
+                    consequuntur quidem eveniet assumenda, excepturi repellat quis soluta recusandae vero doloribus?
+                    Dignissimos eligendi nisi laboriosam distinctio deleniti?</p>
+            </article>
+            <h3>::section (Seleccion del usuario)</h3>
+            <p class="yellow">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque totam dolorem temporibus ipsa illo molestiae soluta voluptatum? Minus animi consequuntur perferendis, sapiente ullam illum nobis, autem facilis repudiandae ipsa error?
+            </p>
+            <p class="blue">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut velit accusamus assumenda, omnis quae alias quibusdam animi at, dolore corporis quam tempore modi illo, laboriosam delectus earum sint minima consequatur!
+            </p>
+            <p class="red">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci itaque perspiciatis optio tempora. Possimus itaque, illum sequi praesentium eveniet, similique in qui molestiae saepe iusto accusamus ab provident voluptatum incidunt.
+            </p>
         </section>
     </main>
 </body>

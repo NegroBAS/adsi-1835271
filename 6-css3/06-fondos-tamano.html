@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fondos (tamaño)</title>
+    <link rel="stylesheet" href="css/master.css">
+    <style>
+        .box{
+            background: url(img/rick.png) no-repeat;
+            border: 2px dotted dodgerblue;
+            height: 300px;
+            width: 500px;
+            margin: 40px auto;
+        }
+        .box1{
+            background-size: cover;
+        }
+        .box2{
+            background-size: contain;
+        }
+        .box3{
+            background-size: 50%;
+        }
+        .box4{
+            background-size: 100px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Fondos tamano</h1>
+        </header>
+        <section>
+            <h3>background-size: cover</h3>
+            <div class="box box1"></div>
+            <h3>background-size: contain</h3>
+            <div class="box box2"></div>
+            <h3>background-size: 50%</h3>
+            <div class="box box3"></div>
+            <h3>background-size: 100px</h3>
+            <div class="box box4"></div>
+        </section>
+    </main>
+</body>
+</html>
