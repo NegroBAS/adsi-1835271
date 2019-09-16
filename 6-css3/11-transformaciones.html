@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Transformaciones</title>
+    <link rel="stylesheet" href="css/master.css">
+    <style>
+        .box{
+            background: url(img/rick2.png) no-repeat center;
+            background-size: contain;
+            height: 700px;
+            margin: 20px auto;
+            width: 400px;
+            border: 1px solid crimson;
+        }
+        .box1{
+            transform: translate(-200px);
+        }
+        .box2{
+            transform: rotate(-90deg);
+        }
+        .box3{
+            transform: scale(0.5);
+        }
+        .box4{
+            transform: skew(25deg);
+        }
+        .box5{
+            transform: rotate(45deg) scale(0.8);
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Transformaciones</h1>
+        </header>
+        <section>
+            <h3>translate()</h3>
+            <div class="box box1"></div>
+            <h3>rotate(-90deg)</h3>
+            <div class="box box2"></div>
+            <h3>scale(0.5)</h3>
+            <div class="box box3"></div>
+            <h3>skew(25deg)</h3>
+            <div class="box box4"></div>
+            <h3>rotate(45deg) scale(0.8);</h3>
+            <div class="box box5"></div>
+        </section>
+    </main>
+</body>
+</html>
