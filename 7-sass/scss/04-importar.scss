@@ -1,0 +1,10 @@
+@import "03-variables.scss";
+
+body
+    main
+        header
+            section.content{
+                h2{
+                    color: $color
+                }
+            }

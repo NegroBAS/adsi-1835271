@@ -1,0 +1,9 @@
+.estilos, body main header section.content h2 {
+  background: crimson;
+  font-size: 3em;
+  font-family: serif;
+}
+
+body main header section.content h2 {
+  font-family: monospace;
+}

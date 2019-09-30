@@ -1,0 +1,22 @@
+body {
+  background-color: pink;
+}
+body main {
+  background-color: white;
+  padding: 20px;
+  margin: 20px auto;
+  width: 960px;
+}
+body main header h1 {
+  color: #742d56;
+  border-bottom: 2px solid #742d56;
+  text-align: center;
+}
+body main section.content {
+  color: gray;
+}
+body main section.content h2, body main section.content h3 {
+  color: #742d56;
+  border-bottom: 2px solid #742d56;
+  text-align: center;
+}

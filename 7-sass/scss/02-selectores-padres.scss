@@ -1,0 +1,13 @@
+body{
+    main{
+        section.content{
+            h2{
+                &:hover{
+                    border-bottom: 2px dashed crimson;
+                }
+            }
+        }
+    }
+}
+    
+            

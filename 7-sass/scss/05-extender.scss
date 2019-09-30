@@ -1,0 +1,14 @@
+.estilos{
+    background: crimson;
+    font-size: 3em;
+    font-family: serif;
+}
+
+body main header section.content h2{
+    @extend.estilos;
+    font-family: monospace;
+}
+                
+            
+        
+    

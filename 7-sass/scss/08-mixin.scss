@@ -1,0 +1,9 @@
+@mixin text-style($color, $size) {
+    font-family: monospace;
+    color: $color;
+    font-size: $size;
+}
+
+p{
+    @include text-style(dodgerblue, 20px);
+}
